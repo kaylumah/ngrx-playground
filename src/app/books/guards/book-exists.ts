@@ -96,6 +96,7 @@ export class BookExistsGuard implements CanActivate {
    * to the 404 page.
    */
   canActivate(route: ActivatedRouteSnapshot): Observable<boolean> {
+    console.log('{GUARD-BOOKEXISTS}');
     return this.waitForCollectionToLoad().switchMap(() =>
       this.hasBook(route.params['id'])
     );

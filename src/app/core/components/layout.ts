@@ -19,4 +19,10 @@ import { Component } from '@angular/core';
   `,
   ],
 })
-export class LayoutComponent {}
+export class LayoutComponent {
+
+  constructor() {
+    console.log('{ LAYOUTCOMPONENT } constructor');
+  }
+
+}

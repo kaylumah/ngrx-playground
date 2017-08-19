@@ -35,10 +35,12 @@ export class CollectionPageComponent implements OnInit {
   books$: Observable<Book[]>;
 
   constructor(private store: Store<fromBooks.State>) {
+    console.log('{ CollectionPageComponent } constructor');
     this.books$ = store.select(fromBooks.getBookCollection);
   }
 
   ngOnInit() {
+    console.log('{ CollectionPageComponent } oninit');
     this.store.dispatch(new collection.LoadAction());
   }
 }

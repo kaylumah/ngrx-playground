@@ -29,12 +29,14 @@ export class ViewBookPageComponent implements OnDestroy {
   actionsSubscription: Subscription;
 
   constructor(store: Store<fromBooks.State>, route: ActivatedRoute) {
+    console.log('{ ViewBookPageComponent } constructor');
     this.actionsSubscription = route.params
       .map(params => new book.SelectAction(params.id))
       .subscribe(store);
   }
 
   ngOnDestroy() {
+    console.log('{ ViewBookPageComponent } destroy');
     this.actionsSubscription.unsubscribe();
   }
 }

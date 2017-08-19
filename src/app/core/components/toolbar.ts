@@ -13,4 +13,8 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class ToolbarComponent {
   @Output() openMenu = new EventEmitter();
+
+  constructor() {
+   console.log('{ TOOLBARCOMPONENT } constructor');
+  }
 }

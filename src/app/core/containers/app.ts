@@ -39,6 +39,7 @@ export class AppComponent {
   loggedIn$: Observable<boolean>;
 
   constructor(private store: Store<fromRoot.State>) {
+    console.log('{ APPCOMPONENT } constructor');
     /**
      * Selectors can be applied with the `select` operator which passes the state
      * tree to the provided selector

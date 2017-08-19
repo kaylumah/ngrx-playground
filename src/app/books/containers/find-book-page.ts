@@ -21,6 +21,7 @@ export class FindBookPageComponent {
   loading$: Observable<boolean>;
 
   constructor(private store: Store<fromBooks.State>) {
+    console.log('{ FindBookPageComponent } constructor');
     this.searchQuery$ = store.select(fromBooks.getSearchQuery).take(1);
     this.books$ = store.select(fromBooks.getSearchResults);
     this.loading$ = store.select(fromBooks.getSearchLoading);
