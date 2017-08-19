@@ -1,0 +1,62 @@
+{
+  "users": [
+    {"id": 1,
+      "name": "X"
+    }
+  ],
+  "projects": [
+    {"id": 1,
+      "userId": 1
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "first_name": "Sebastian",
+      "last_name": "Eschweiler",
+      "email": "sebastian@codingthesmartway.com",
+      "_links":{
+        "self": {
+          "url": "http://localhost:3000/employees/1"
+        },
+        "notes": {
+          "href": "http://localhost:3000/employees/1/notes"
+        }
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Hierarchy-Forward/System.LinkTypes.Hierarchy-Reverse / System.LinkTypes.Related / Hyperlink",
+          "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/299 / https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/wit/workItems/297",
+          "attributes": {
+            "isLocked": false,
+            "comment": "decomposition of work https://www.visualstudio.com/en-us/docs/work/reference/link-type-element-reference"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "first_name": "Steve",
+      "last_name": "Palmer",
+      "email": "steve@codingthesmartway.com"
+    },
+    {
+      "id": 3,
+      "first_name": "Ann",
+      "last_name": "Smith",
+      "email": "ann@codingthesmartway.com"
+    }
+  ],
+  "notes": [
+    {
+      "id": 1,
+      "employeeId": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "commentId": 1
+    }
+  ]
+}
