@@ -9,5 +9,10 @@ export const routes: Routes = [
     loadChildren: './books/books.module#BooksModule',
     canActivate: [AuthGuard],
   },
+  {
+    path: 'entities',
+    loadChildren: './entities/entities.module#EntitiesModule',
+    canActivate: [AuthGuard]
+  },
   { path: '**', component: NotFoundPageComponent },
 ];

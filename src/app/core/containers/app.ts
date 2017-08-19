@@ -26,6 +26,9 @@ import * as Auth from '../../auth/actions/auth';
         <bc-nav-item (activate)="logout()" *ngIf="loggedIn$ | async">
           Sign Out
         </bc-nav-item>
+        <bc-nav-item (activate)="closeSidenav()" *ngIf="loggedIn$ | async" routerLink="/entities" icon="book" hint="View your book collection">
+          Entities
+        </bc-nav-item>
       </bc-sidenav>
       <bc-toolbar (openMenu)="openSidenav()">
         Book Collection
