@@ -17,5 +17,17 @@
     <h2><a target="_blank" href="https://blog.angular.io//">Angular blog</a></h2>
   </li>
 </ul>
+<h1>CARDS</h1>
+<ul>
+  <li *ngFor="let card of cards">
+    {{card | json}}
+  </li>
+</ul>
+
+<button (click)="increment()">Increment</button>
+<div>Current Count: {{ counter | async }}</div>
+<button (click)="decrement()">Decrement</button>
+
+<button (click)="reset()">Reset Counter</button>
 
 <router-outlet></router-outlet>
