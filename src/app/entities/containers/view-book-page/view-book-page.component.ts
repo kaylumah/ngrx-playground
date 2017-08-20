@@ -21,9 +21,7 @@ import * as book from '../../actions/book';
 @Component({
   selector: 'bc-view-book-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
-    <bc-selected-book-page></bc-selected-book-page>
-  `,
+  templateUrl: './view-book-page.component.html',
 })
 export class ViewBookPageComponent implements OnDestroy {
   actionsSubscription: Subscription;
