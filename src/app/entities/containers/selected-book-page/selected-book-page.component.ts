@@ -9,14 +9,8 @@ import { Entity } from '../../models/entity';
 @Component({
   selector: 'bc-selected-book-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
-    <bc-book-detail
-      [book]="book$ | async"
-      [inCollection]="isSelectedBookInCollection$ | async"
-      (add)="addToCollection($event)"
-      (remove)="removeFromCollection($event)">
-    </bc-book-detail>
-  `,
+  templateUrl: './selected-book-page.component.html',
+  styleUrls: ['./selected-book-page.component.scss']
 })
 export class SelectedBookPageComponent {
   book$: Observable<Entity>;
