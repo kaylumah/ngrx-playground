@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 
 import * as fromBooks from '../reducers';
-import * as collection from '../actions/collection';
+import * as collection from '../actions/entity.collection.actions';
 import { Entity } from '../models/entity';
 
 @Component({

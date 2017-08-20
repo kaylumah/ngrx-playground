@@ -17,19 +17,25 @@ export const LOAD_FAIL = '[Collection] Load Fail';
 export class AddBookAction implements Action {
   readonly type = ADD_BOOK;
 
-  constructor(public payload: Entity) {}
+  constructor(public payload: Entity) {
+    console.log('ADD BOOK ACTION CREATED');
+  }
 }
 
 export class AddBookSuccessAction implements Action {
   readonly type = ADD_BOOK_SUCCESS;
 
-  constructor(public payload: Entity) {}
+  constructor(public payload: Entity) {
+    console.log('ADD BOOK ACTION SUCCESS CREATED');
+  }
 }
 
 export class AddBookFailAction implements Action {
   readonly type = ADD_BOOK_FAIL;
 
-  constructor(public payload: Entity) {}
+  constructor(public payload: Entity) {
+    console.log('ADD BOOK ACTION FAIL CREATED');
+  }
 }
 
 /**

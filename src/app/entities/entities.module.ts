@@ -7,7 +7,7 @@ import { EffectsModule } from '@ngrx/effects';
 
 import { ComponentsModule } from './components';
 import { BookEffects } from './effects/book';
-import { CollectionEffects } from './effects/collection';
+import { EntityCollectionEffects } from './effects/entity.collection.effects';
 import { EntityExistsGuard } from './guards/entity-exists';
 
 import { FindBookPageComponent } from './containers/find-book-page';
@@ -49,7 +49,7 @@ import { EntityService } from './services/entity.service';
      * All Effects will only be instantiated once regardless of
      * whether they are registered once or multiple times.
      */
-    EffectsModule.forFeature([BookEffects, CollectionEffects]),
+    EffectsModule.forFeature([BookEffects, EntityCollectionEffects]),
   ],
   declarations: [
     FindBookPageComponent,

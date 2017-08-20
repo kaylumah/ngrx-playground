@@ -41,6 +41,9 @@ export class BookEffects {
     .debounceTime(this.debounce, this.scheduler || async)
     .map(action => action.payload)
     .switchMap(query => {
+
+      console.log('search$', query);
+
       if (query === '') {
         return empty();
       }
@@ -68,5 +71,7 @@ export class BookEffects {
     @Optional()
     @Inject(SEARCH_SCHEDULER)
     private scheduler: Scheduler
-  ) {}
+  ) {
+    console.log('BookEffect constructed');
+  }
 }

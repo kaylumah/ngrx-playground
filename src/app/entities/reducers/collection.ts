@@ -1,4 +1,4 @@
-import * as collection from '../actions/collection';
+import * as collection from '../actions/entity.collection.actions';
 
 export interface State {
   loaded: boolean;

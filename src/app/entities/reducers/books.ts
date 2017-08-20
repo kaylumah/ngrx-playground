@@ -1,7 +1,7 @@
 import { createSelector } from '@ngrx/store';
 import { Entity } from '../models/entity';
 import * as book from '../actions/book';
-import * as collection from '../actions/collection';
+import * as collection from '../actions/entity.collection.actions';
 
 export interface State {
   ids: string[];

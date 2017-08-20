@@ -2,7 +2,7 @@ import { Actions } from '@ngrx/effects';
 import { TestBed } from '@angular/core/testing';
 import { empty } from 'rxjs/observable/empty';
 import { cold, hot } from 'jasmine-marbles';
-import { CollectionEffects } from './collection';
+import { EntityCollectionEffects } from './collection';
 import { Database } from '@ngrx/db';
 import { Book } from '../models/book';
 import * as collection from '../actions/collection';
@@ -24,7 +24,7 @@ export function getActions() {
 
 describe('CollectionEffects', () => {
   let db: any;
-  let effects: CollectionEffects;
+  let effects: EntityCollectionEffects;
   let actions$: TestActions;
 
   const book1 = { id: '111', volumeInfo: {} } as Book;
@@ -33,7 +33,7 @@ describe('CollectionEffects', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [
-        CollectionEffects,
+        EntityCollectionEffects,
         {
           provide: Database,
           useValue: jasmine.createSpyObj('database', [
@@ -48,7 +48,7 @@ describe('CollectionEffects', () => {
     });
 
     db = TestBed.get(Database);
-    effects = TestBed.get(CollectionEffects);
+    effects = TestBed.get(EntityCollectionEffects);
     actions$ = TestBed.get(Actions);
   });
 
