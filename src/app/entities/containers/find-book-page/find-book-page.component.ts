@@ -3,9 +3,9 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 
-import * as fromBooks from '../reducers';
-import * as book from '../actions/book';
-import { Entity } from '../models/entity';
+import * as fromBooks from '../../reducers';
+import * as book from '../../actions/book';
+import { Entity } from '../../models/entity';
 
 @Component({
   selector: 'bc-find-book-page',

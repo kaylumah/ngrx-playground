@@ -10,10 +10,7 @@ import { BookEffects } from './effects/book';
 import { EntityCollectionEffects } from './effects/entity.collection.effects';
 import { EntityExistsGuard } from './guards/entity-exists';
 
-import { FindBookPageComponent } from './containers/find-book-page.component';
-import { ViewBookPageComponent } from './containers/view-book-page.component';
-import { SelectedBookPageComponent } from './containers/selected-book-page.component';
-import { CollectionPageComponent } from './containers/collection-page.component';
+import { FindBookPageComponent, ViewBookPageComponent, SelectedBookPageComponent, CollectionPageComponent} from './containers';
 
 import { reducers } from './reducers';
 import { EntityService } from './services/entity.service';

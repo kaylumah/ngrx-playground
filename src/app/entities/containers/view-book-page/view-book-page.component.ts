@@ -5,8 +5,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { Subscription } from 'rxjs/Subscription';
 
-import * as fromBooks from '../reducers';
-import * as book from '../actions/book';
+import * as fromBooks from '../../reducers';
+import * as book from '../../actions/book';
 
 /**
  * Note: Container components are also reusable. Whether or not
