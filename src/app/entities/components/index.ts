@@ -5,18 +5,18 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { BookAuthorsComponent } from './book-authors';
-import { BookDetailComponent } from './entity-detail.component';
-import { BookPreviewComponent } from './entity.component';
-import { BookPreviewListComponent } from './entity-list.component';
+import { EntityDetailComponent } from './entity-detail.component';
+import { EntityComponent } from './entity.component';
+import { EntityListComponent } from './entity-list.component';
 import { BookSearchComponent } from './book-search';
 
 import { PipesModule } from '../../shared/pipes';
 
 export const COMPONENTS = [
   BookAuthorsComponent,
-  BookDetailComponent,
-  BookPreviewComponent,
-  BookPreviewListComponent,
+  EntityDetailComponent,
+  EntityComponent,
+  EntityListComponent,
   BookSearchComponent,
 ];
 

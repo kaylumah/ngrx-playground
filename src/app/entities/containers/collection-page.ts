@@ -12,7 +12,7 @@ import { Entity } from '../models/entity';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <md-card>
-      <md-card-title>My Collection</md-card-title>
+      <md-card-title>Entities</md-card-title>
     </md-card>
     <bc-book-preview-list [books]="books$ | async"></bc-book-preview-list>
   `,

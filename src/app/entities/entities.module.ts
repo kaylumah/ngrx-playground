@@ -16,6 +16,7 @@ import { SelectedBookPageComponent } from './containers/selected-book-page';
 import { CollectionPageComponent } from './containers/collection-page';
 
 import { reducers } from './reducers';
+import { EntityService } from './services/entity.service';
 
 @NgModule({
   imports: [
@@ -56,6 +57,6 @@ import { reducers } from './reducers';
     SelectedBookPageComponent,
     CollectionPageComponent,
   ],
-  providers: [EntityExistsGuard],
+  providers: [EntityExistsGuard, EntityService],
 })
 export class EntitiesModule {}

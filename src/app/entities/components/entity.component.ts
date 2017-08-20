@@ -4,6 +4,7 @@ import { Entity } from '../models/entity';
 @Component({
   selector: 'bc-book-preview',
   template: `
+    <h1> Singular Entity </h1>
     <a [routerLink]="['/books', id]">
       <md-card>
         <md-card-title-group>
@@ -22,6 +23,10 @@ import { Entity } from '../models/entity';
   `,
   styles: [
     `
+    :host {
+      background-color: hotpink;
+    }
+
     md-card {
       width: 400px;
       height: 300px;
@@ -64,7 +69,7 @@ import { Entity } from '../models/entity';
   `,
   ],
 })
-export class BookPreviewComponent {
+export class EntityComponent {
   @Input() book: Entity;
 
   get id() {

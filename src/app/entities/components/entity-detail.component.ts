@@ -4,6 +4,7 @@ import { Entity } from '../models/entity';
 @Component({
   selector: 'bc-book-detail',
   template: `
+    <h1> Entity Detail </h1>
     <md-card *ngIf="book">
       <md-card-title-group>
         <md-card-title>{{ title }}</md-card-title>
@@ -57,7 +58,7 @@ import { Entity } from '../models/entity';
   `,
   ],
 })
-export class BookDetailComponent {
+export class EntityDetailComponent {
   /**
    * Presentational components receieve data through @Input() and communicate events
    * through @Output() but generally maintain no internal state of their

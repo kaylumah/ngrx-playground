@@ -25,12 +25,15 @@ import { CustomRouterStateSerializer } from './shared/utils';
 import { AppComponent } from './core/containers/app';
 import { environment } from '../environments/environment';
 
+import {HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   imports: [
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     HttpModule,
+    HttpClientModule,
     RouterModule.forRoot(routes, { useHash: true }),
 
     /**
