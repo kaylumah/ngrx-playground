@@ -10,26 +10,8 @@ import { Entity } from '../models/entity';
 @Component({
   selector: 'bc-collection-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
-    <md-card>
-      <md-card-title>Entities</md-card-title>
-    </md-card>
-    <bc-book-preview-list [books]="books$ | async"></bc-book-preview-list>
-  `,
-  /**
-   * Container components are permitted to have just enough styles
-   * to bring the view together. If the number of styles grow,
-   * consider breaking them out into presentational
-   * components.
-   */
-  styles: [
-    `
-    md-card-title {
-      display: flex;
-      justify-content: center;
-    }
-  `,
-  ],
+  templateUrl: './collection-page.component.html',
+  styleUrls: ['./collection-page.component.scss']
 })
 export class CollectionPageComponent implements OnInit {
   books$: Observable<Entity[]>;
