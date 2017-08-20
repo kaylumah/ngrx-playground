@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { Entity } from '../models/entity';
+import { Entity } from '../../models/entity';
 
 @Component({
   selector: 'bc-book-authors',
