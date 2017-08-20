@@ -9,12 +9,12 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { StoreModule } from '@ngrx/store';
 import { counterReducer } from './counter';
+import { CustomComponent } from './custom/custom.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
-  ],
+    AppComponent  ],
   imports: [
     BrowserModule,
     StoreModule.forRoot({ counter: counterReducer }),
