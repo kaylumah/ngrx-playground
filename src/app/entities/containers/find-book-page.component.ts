@@ -10,10 +10,8 @@ import { Entity } from '../models/entity';
 @Component({
   selector: 'bc-find-book-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
-    <bc-book-search [query]="searchQuery$ | async" [searching]="loading$ | async" (search)="search($event)"></bc-book-search>
-    <bc-book-preview-list [books]="books$ | async"></bc-book-preview-list>
-  `,
+  templateUrl: './find-book-page.component.html',
+  styleUrls: ['./find-book-page.component.scss']
 })
 export class FindBookPageComponent {
   searchQuery$: Observable<string>;
